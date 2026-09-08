@@ -68,8 +68,9 @@ section{padding:72px 5vw}
 @media(min-width:768px){.about-wrap{grid-template-columns:1fr 1fr}}
 .about-img-wrap{border-radius:20px;overflow:hidden;box-shadow:0 16px 48px rgba(0,0,0,.1)}
 .about-img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
-.pre-about-img{max-width:980px;margin:0 auto;padding:0 5vw}
-.pre-about-img img{width:100%;aspect-ratio:21/9;object-fit:cover;border-radius:20px;box-shadow:0 16px 48px rgba(0,0,0,.1);display:block}
+.pre-about-bg-wrap{position:relative;min-height:280px;overflow:hidden}
+.pre-about-bg{position:absolute;inset:0;background-image:url('./7.png');background-size:cover;background-position:center}
+.pre-about-overlay{position:absolute;inset:0;background:rgba(0,0,0,.18)}
 .about-text p{color:#475569;line-height:1.84;margin-bottom:13px;font-size:.93rem;font-weight:400}
 .hl-list{list-style:none;margin-top:20px;display:flex;flex-direction:column;gap:8px}
 .hl-list li{padding:10px 14px 10px 36px;position:relative;background:#f8fafc;border-radius:8px;color:#334155;font-size:.87rem;border-left:3px solid #E53935}
@@ -152,8 +153,9 @@ footer{background:#020617;color:#334155;padding:28px 5vw;text-align:center;font-
   <div class="stat"><div class="stat-n">Local</div><div class="stat-l">Trusted</div></div>
 </div>
 
-<div class="pre-about-img" data-r>
-  <img src="./7.png" alt="Spark Academy Maths Tuition students learning together" loading="lazy">
+<div class="pre-about-bg-wrap" data-r>
+  <div class="pre-about-bg"></div>
+  <div class="pre-about-overlay"></div>
 </div>
 
 <section>
